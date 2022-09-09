@@ -4,24 +4,19 @@
 
 /**
  *
- * * main - print the string in the put function
+ *  * main - Entry point
  *
- * *
+ *   *
  *
- * * Description: using the main function
+ *    * Return: Always 0 (Success)
  *
- * * this program prints "programming i like building a multilingual puzzle
- *
- * * Return: 0
- *
- * */
+ *     */
 
-int main(vold)
+int main(void)
 
 {
 
-	        puts("\"programming is like building a multilingual puzzle");
+	puts("\"Programming is like building a multilingual puzzle");
 
-		        return (o);
-
+		return (0);
 }
