@@ -1,25 +1,27 @@
-#include  <stdio.h>
+#include <stdio.h>
+
+#include <unistd.h>
 
 
 
 /**
  *
- *  * main - Entry point
+ *  * main - prints exactly "and that piece of art is useful"
  *
- *   * Description: C program that prints a function followed by a new line
+ *   * - Dora Korpar, 2015-10-19",
  *
- *    * Return; 0 if successful
+ *    * followed by a new line, to the standard error.
  *
- *     */
-
-
+ *     * Return: Always 0 (Success)
+ *
+ *      */
 
 int main(void)
 
 {
 
-		puts("\"Programming is like building a multilingual puzzle");
+		write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
 
-			return (0);
+			return (1);
 
 }
