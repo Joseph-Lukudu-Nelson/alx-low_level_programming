@@ -1,13 +1,17 @@
 #include "main.h"
+
 /**
- * _strlen_recursion - returns the length of a string.
- * @s: string
- * Return: the length of a string.
+ * _pow_recursion - returns the value of x raised to the power of y.
+ *  @x: base.
+ *  @y: exponent.
+ *  Return: value of the exponentiation.
  */
-int _strlen_recursion(char *s)
+int _pow_recursion(int x, int y)
 {
-	if (*s == '\0')
-		return (0);
+	if (y < 0)
+		return (-1);
+	else if (y == 0)
+		return (1);
 	else
-		return (1 + _strlen_recursion(s + 1));
+		return (x * _pow_recursion(x, y - 1));
 }
